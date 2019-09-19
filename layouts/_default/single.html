@@ -1,0 +1,30 @@
+
+{{ define "title" }}
+<!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
+{{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<!-- <html>
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+</head>
+<body>
+     single template
+     <h1>Header</h1>
+     <hr>
+     <h3>{{.Title}}</h3>
+     <hr>
+     {{.Content}}
+     <hr>
+
+     <h2>footer</h2>
+</body>
+</html> -->
+{{ end }}
+
